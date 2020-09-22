@@ -8,6 +8,6 @@ class MP3Importer
   def files 
   file_dir = Dir["/spec/fixtures/mp3s/*"]
   # file_dir
-  Dir["/spec/fixtures/mp3s.rb"]
+  Dir.glob('path/**/*').select { |e| File.file? e }
   end
 end 
