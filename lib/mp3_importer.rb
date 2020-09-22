@@ -10,9 +10,6 @@ class MP3Importer
   def files 
     # binding.pry
   file_name = Dir.entries(path) - [".", ".."]
-  # new_arr = []
-  # new_arr << "."
-  # new_arr << ".."
   # file_name - new_arr
   # file_name.delete_at(1)
   # file_name.delete_at(-1)
@@ -22,5 +19,6 @@ class MP3Importer
   def import 
     files.each do |file| Song.new_by_file_name(file.gsub(".mp3","").split(" - "))
   end
+end
     
 end 
