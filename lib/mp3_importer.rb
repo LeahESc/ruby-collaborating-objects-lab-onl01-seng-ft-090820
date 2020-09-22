@@ -13,5 +13,6 @@ class MP3Importer
   # file_dir
   file_name = Dir.glob("#{path}/*.mp3")
   file_name.keep_if { |item| item != #{path} }
+  file_name
   end
 end 
