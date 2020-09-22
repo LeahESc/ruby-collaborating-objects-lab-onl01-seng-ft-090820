@@ -20,7 +20,7 @@ class MP3Importer
   end
   
   def import 
-    files.each do |file| Song.new_by_file_name(file.gsub(".mp3","").split(" - ")
+    files.each do |file| Song.new_by_file_name(file.gsub(".mp3","").split(" - "))
   end
     
 end 
