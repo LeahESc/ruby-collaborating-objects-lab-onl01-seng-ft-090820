@@ -10,8 +10,12 @@ class MP3Importer
   def files 
     # binding.pry
   file_name = Dir.entries(path)
-  file_name.delete_at(1)
-  file_name.delete_at(-1)
+  new_arr = []
+  new_arr << "."
+  new_arr << ".."
+  file_name - new_arr
+  # file_name.delete_at(1)
+  # file_name.delete_at(-1)
   file_name
   end
   
