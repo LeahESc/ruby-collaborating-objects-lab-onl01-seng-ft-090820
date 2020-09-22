@@ -12,7 +12,7 @@ class MP3Importer
   file_name = Dir.entries(path)
   file_name.delete_at(1)
   file_name.delete_at(-1)
-  # file_name
+  file_name
   end
   
   def import 
