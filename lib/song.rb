@@ -16,4 +16,5 @@ class Song
     song = self.new(song_array[1])
     song.artist = Artist.add_song
     song
+  end
 end 
