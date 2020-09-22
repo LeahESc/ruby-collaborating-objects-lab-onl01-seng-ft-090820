@@ -13,6 +13,5 @@ class MP3Importer
   # file_dir
   file_name = Dir.glob("#{path}/*.mp3")
   file_name.select { |item| File.directory? item }
-  item
   end
 end 
